@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -34,27 +33,42 @@
     <!-- Size should be 32 x 32 pixels -->
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
-    <%= javascript_include_tag "application" %>
-  </head>
-  <body>
 
-    <div class="navbar navbar-default navbar-static-top">
+    <%= javascript_include_tag "application" %>
+<!DOCTYPE html>
+  </head>
+  <body id="page-top" class="index">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Thequizapp</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
-          </ul>
+        <a class="navbar-brand" href="#page-top">Thequizapp</a>
         </div>
-      </div>
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Manage Users</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">View Results</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Analytics</a>
+                    </li>
+                </ul>
+            </div>
+     
     </div>
+</nav>
 
     <div class="container">
       <div class="row">
