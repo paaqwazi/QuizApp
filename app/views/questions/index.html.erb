@@ -1,8 +1,8 @@
-<!--<%- model_class = Question -%>-->
+<%- model_class = Question -%>
 <div class="page-header">
- <!-- <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>-->
+ <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
 </div>
-<table class="table table-striped">
+<table class="table table-hover">
   <thead>
     <tr>
        <th><%= model_class.human_attribute_name(:question_id) %></th>
