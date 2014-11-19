@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :questions
 
   get 'admin/index'
 
   get 'questions/show'
+ 
 
 
 

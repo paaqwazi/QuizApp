@@ -1,0 +1,23 @@
+<%- model_class = Question -%>
+<div class="page-header">
+ <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-condensed">
+  <thead>
+    <tr>
+       <th><%= model_class.human_attribute_name(:question_id) %></th>
+      <th><%= model_class.human_attribute_name(:question_text) %></th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <% @questions.each do |question| %>
+      <tr>
+        <td><%= question.question_id %></td>
+        <td><%= question.question_text %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
